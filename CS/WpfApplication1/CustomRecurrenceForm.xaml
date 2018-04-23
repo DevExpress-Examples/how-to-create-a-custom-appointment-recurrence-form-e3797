@@ -1,0 +1,35 @@
+﻿<!--region #CustomRecurrenceForm-->
+<UserControl x:Class="WpfApplication1.CustomRecurrenceForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:dxsch="http://schemas.devexpress.com/winfx/2008/xaml/scheduler"
+             xmlns:dxschint="http://schemas.devexpress.com/winfx/2008/xaml/scheduler/internal"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             Loaded="UserControl_Loaded">
+    
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <dxsch:RecurrenceRangeControl 
+            RecurrenceInfo="{Binding RecurrenceVisualController.RecurrenceInfo}"
+            Pattern="{Binding RecurrenceVisualController.Controller.PatternCopy}" 
+            TimeZoneHelper="{Binding TimeZoneHelper, Mode=OneTime}"
+            IsEnabled="{Binding ReadOnly, Converter={dxschint:InvertedBoolConverter}}"/>
+        
+        <StackPanel Grid.Row="1" 
+                    Orientation="Horizontal" HorizontalAlignment="Right" 
+                    Margin="0,8,0,0">
+            <Button x:Name="OK" Content="OK" 
+                    MinWidth="75" Margin="6,0,0,0" Click="OK_Click"/>
+            <Button x:Name="Cancel" Content="Cancel" 
+                    MinWidth="75" Margin="6,0,0,0" Click="Cancel_Click"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
+<!--endregion #CustomRecurrenceForm-->
