@@ -2,9 +2,9 @@
 *Files to look at*:
 
 * [CustomRecurrenceForm.xaml](./CS/WpfApplication1/CustomRecurrenceForm.xaml) (VB: [CustomRecurrenceForm.xaml](./VB/WpfApplication1/CustomRecurrenceForm.xaml))
-* [CustomRecurrenceForm.xaml.cs](./CS/WpfApplication1/CustomRecurrenceForm.xaml.cs) (VB: [CustomRecurrenceForm.xaml](./VB/WpfApplication1/CustomRecurrenceForm.xaml))
+* [CustomRecurrenceForm.xaml.cs](./CS/WpfApplication1/CustomRecurrenceForm.xaml.cs) (VB: [CustomRecurrenceForm.xaml.vb](./VB/WpfApplication1/CustomRecurrenceForm.xaml.vb))
 * [MainWindow.xaml](./CS/WpfApplication1/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfApplication1/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/WpfApplication1/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/WpfApplication1/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/WpfApplication1/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfApplication1/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to create a custom Appointment Recurrence form
 
